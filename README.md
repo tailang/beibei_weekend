@@ -1,5 +1,5 @@
 # BeibeiWeekend
-快乐的写周报@beibei
+快乐地写周报@beibei
 ## Installation
 1. install ruby 2.0.0+
 2. `$ gem install specific_install`
@@ -8,20 +8,20 @@
 ## Usage
 
 * create workspace  
-`$bbweekend -c workspace #workspace的名字可自己指定`  
-`cd workspace`  
+`$bbweekend -c workspace`   
+workspace的名字可以自定义，执行该命令将创建对应的文件夹，进入目录将看到如下文件结构  
 ```
 .
 └── resource
-    ├── base.css
-    ├── config.yml
-    └── template.md
+    ├── base.css     #markdown解析成html，可以对一些html标签进行样式自定义
+    ├── config.yml   #配置一些邮件参数，如用户名等
+    └── template.md  #生成周报邮件的模板，可以自定义
 ```
-* config config.yml and write yourself week mail template
-* generate mail  
+* 根据自己的环境和团队情况配置config.yml及编写template.md
+* 根据模板生成周报   
 `bbweekend -g 2017-2-14-曹平-周报` 
-* write mail
-* send mail  
+* 用markdown语法编写周报
+* 发送邮件  
 `bbweekend -s 2017-2-14-曹平-周报.md`
 
 ## Development
