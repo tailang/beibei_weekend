@@ -1,0 +1,46 @@
+#!/usr/bin/env ruby
+
+lib_path = File.expand_path('../../lib', __FILE__)
+$:.unshift(lib_path)
+
+require "beibei_weekend"
+require "optparse"
+
+action = :create
+option = ""
+
+OptionParser.new do |opts|
+
+  opts.banner = 'here is help messages of the command line tool.'
+
+  opts.on('-c workspace', '--create workspace', 'create workspace') do |value|
+    action = :create;
+    option = value
+  end
+
+  opts.on('-g mail', '--generate mail', 'generate mail') do |value|
+    action = :generate;
+    option = value
+  end
+
+  opts.on('-s mail', '--send mail', 'send mail') do |value|
+    action = :send
+    option = value
+  end
+
+end.parse!
+
+
+case action
+when :create
+  BeibeiWeekend::Workspace.create option
+when :generate
+
+when :send
+
+else
+  BeibeiWeekend::Log.warn "请使用正确的命令!"
+end
+
+
+
