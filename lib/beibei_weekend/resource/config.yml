@@ -1,0 +1,12 @@
+mail_defaults:
+  address: "smtp.exmail.qq.com"
+  port: 25
+  domain: "qq.com"
+  user_name: "mail user name" #填写自己的邮件
+  password: "mail password" #填写邮件密码
+  authentication: "plain"
+  enable_starttls_auto: true
+mail_send_info:
+  from: "ping.cap@husor.com"
+  to: "guoyu.zhang@husor.com"
+  cc: []

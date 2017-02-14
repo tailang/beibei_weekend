@@ -35,9 +35,9 @@ case action
 when :create
   BeibeiWeekend::Workspace.create option
 when :generate
-
+  BeibeiWeekend::WeekMail.generate option
 when :send
-
+  BeibeiWeekend::SendMail.send option
 else
   BeibeiWeekend::Log.warn "请使用正确的命令!"
 end
