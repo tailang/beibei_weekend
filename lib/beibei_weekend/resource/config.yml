@@ -2,11 +2,11 @@ mail_defaults:
   address: "smtp.exmail.qq.com"
   port: 25
   domain: "qq.com"
-  user_name: "mail user name" #填写自己的邮件
-  password: "mail password" #填写邮件密码
+  user_name: "mail user name" #需要修改:填写自己的邮件
+  password: "mail password" #需要修改:填写邮件密码
   authentication: "plain"
   enable_starttls_auto: true
 mail_send_info:
-  from: "ping.cap@husor.com"
-  to: "guoyu.zhang@husor.com"
-  cc: []
+  from: "ping.cap@husor.com" #需要修改:你的邮箱地址
+  to: "guoyu.zhang@husor.com" #需要修改:发送邮箱地址
+  cc: [] #需要修改:抄送给谁
