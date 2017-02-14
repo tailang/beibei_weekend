@@ -5,24 +5,28 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 TODO: Delete this and the text above, and describe your gem
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'beibei_weekend'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install beibei_weekend
+1. install ruby 2.0.0+
+2. `$ gem install specific_install`
+3. `$ gem specific_install https://github.com/tailang/beibei_weekend.git`
 
 ## Usage
 
-TODO: Write usage instructions here
+* create workspace  
+`$bbweekend -c workspace #workspace的名字可自己指定`  
+`cd workspace`  
+```
+.
+└── resource
+    ├── base.css
+    ├── config.yml
+    └── template.md
+```
+* config config.yml and write yourself week mail template
+* generate mail  
+`bbweekend -g 2017-2-14-曹平-周报` 
+* write mail
+* send mail  
+`bbweekend -s 2017-2-14-曹平-周报.md`
 
 ## Development
 
