@@ -13,10 +13,10 @@ module BeibeiWeekend
             Dir.mkdir workspace_name
             resource_dir = File.expand_path('../resource', __FILE__)
             FileUtils.cp_r resource_dir, "./#{workspace_name}/"
+            Log.info "创建workspace完成!"
           rescue
             Log.error "创建workspace失败,请重新尝试!"
           end
-          Log.info "创建workspace完成!"
         end
       end
     end

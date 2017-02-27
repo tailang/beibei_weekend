@@ -7,6 +7,6 @@ mail_defaults:
   authentication: "plain"
   enable_starttls_auto: true
 mail_send_info:
-  from: "ping.cap@husor.com" #需要修改:你的邮箱地址
-  to: "guoyu.zhang@husor.com" #需要修改:发送邮箱地址
+  from: "xxx@xxx.xxx" #需要修改:你的邮箱地址
+  to: "xxx@xxx.xxx" #需要修改:发送邮箱地址
   cc: [] #需要修改:抄送给谁
