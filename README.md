@@ -19,10 +19,10 @@ workspace的名字可以自定义，执行该命令将创建对应的文件夹�
 ```
 * 根据自己的环境和团队情况配置config.yml及编写template.md
 * 根据模板生成周报   
-`bbweekend -g 2017-2-14-曹平-周报` 
+`bbweekend -g 2017-2-14-周报` 
 * 用markdown语法编写周报
 * 发送邮件  
-`bbweekend -s 2017-2-14-曹平-周报.md`
+`bbweekend -s 2017-2-14-周报.md`
 
 ## License
 
